@@ -10,7 +10,7 @@
 \usepackage{ifxetex}
 \ifxetex
   \usepackage{fontspec}
-  \usepackage[xetex]{hyperref}
+  \usepackage{hyperref}
 \else
   \usepackage[utf8]{inputenc}
   \usepackage[T1]{fontenc}
@@ -29,8 +29,8 @@
 \def \subtitle {}
 
 \def \linkedinicon {\faLinkedin}
-\def \linkedinlink {https://linkedin.com/in/dwight-schrute/}
-\def \linkedintext {/dwight-schrute}
+\def \linkedinlink {http://www.linkedin.com/in/erik-gabrielsen-4505a6218}
+\def \linkedintext {/erik-gabrielsen}
 
 \def \phoneicon {\faPhone}
 \def \phonetext {+47 960 45 058}
@@ -48,7 +48,7 @@
 \def \websitetext {dwightschrute.com}
 
 \def \locationicon {\faMapMarker}
-\def \locationtext {Østre Moholt-tun 6, 7050 Trondheim}
+\def \locationtext {Neufelds gate 6, 7030 Trondheim}
 
 \def \birthdayicon {\faBirthdayCake}
 \def \birhtdaytext {21.12.1999}
@@ -58,18 +58,18 @@
 % Misc settings
 \def \entryspacing {-0pt}
 
-\def \bulletstyle {\faAngleRight}
+\def \bulletstyle {\faCaretRight}
 
 % Define colours
 \definecolor{primary}{HTML}{000000}
-\definecolor{secondary}{HTML}{723976}
+\definecolor{secondary}{RGB}{79, 100, 111}
 \definecolor{accent}{HTML}{263238}
 \definecolor{links}{HTML}{1565C0}
 
 %------------------------------------------------------------------------------------------------------------------- 
 
 % Defines to make listing easier
-\def \linkedin {\linkedinicon \hspace{3pt}\href{\linkedinlink}{\linkedintext}}
+\def \linkedin {\href{\linkedinlink}{\linkedinicon}}
 \def \phone {\phoneicon \hspace{3pt}{ \phonetext}}
 \def \email {\emailicon \hspace{3pt}\href{\emaillink}{\emailtext}}
 \def \github {\githubicon \hspace{3pt}\href{\githublink}{\githubtext}}
@@ -104,7 +104,7 @@
 }
 
 % Entry start and end, for spacing
-\newcommand{\resumeEntryStart}{\begin{itemize}[leftmargin=2.5mm]}
+\newcommand{\resumeEntryStart}{\begin{itemize}[leftmargin=2.5mm]\item[]}
 \newcommand{\resumeEntryEnd}{\end{itemize}\vspace{\entryspacing}}
 
 % Itemized list for the bullet points under an entry, if necessary
@@ -188,11 +188,11 @@
       \begin{tabular}[b]{l}
         \fontsize{35}{45}\selectfont{\color{primary}{{\textbf{\fullname}}}} \\
         {\small#4 \quad \small#5} \\
-        {\small \faBirthdayCake \hspace{3pt}21.12.1999 \quad \small \location}
+        {\small \faBirthdayCake \hspace{3pt}21.12.1999 \quad \small \location \quad \linkedin}
       \end{tabular}
     } & {
       \begin{tabular}{l}
-        \includegraphics[width = 0.25\textwidth]{profilePic_smaller.jpg}
+        \includegraphics[width = 0.20\textwidth]{Erikg.jpg}
       \end{tabular}
     }
   \end{tabularx}
@@ -202,133 +202,154 @@
 %-------------------------------------------------- BEGIN HERE --------------------------------------------------
 
 %---------------------------------------------------- HEADER ----------------------------------------------------
-
 \headertype{\linkedin}{\github}{\website}{\phone}{\email}{} % Set the order of items here
-\vspace{-40pt} % Set a negative value to push the body up, and the opposite
+\vspace{-50pt} % Set a negative value to push the body up, and the opposite
 
 %-------------------------------------------------- EDUCATION --------------------------------------------------
-\section{\faInfo}{Oppsummering}
+\section{\faSendO}{Summary}
 
 \resumeEntryStart
-\resumeItemListStart
-      \resumeItem {Tredjeårsstudent ved Elektronisk systemdesign og innovasjon på NTNU}
-      \resumeItem {Medlem i hardwaregruppa i \href{https://ascendntnu.no/}{Ascend NTNU} }
-      \resumeItem{Fem års arbeidserfaring og fagbrev i laboratoriefaget}
-      \resumeItem{Utført førstegangstjeneste som radiooperatør i Sjøforsvaret med svært god attest}
-
+    \resumeItemListStart
+      \resumeItem{Fifth year student of electronics systems design at NTNU.}
+      \resumeItem{Extensive experience in UAV \& ROV hardware design.}
+      \resumeItem{Concluded compulsory military service as a radio operator in the navy, and promoted to leading private.}
+      \resumeItem{Combined five years of work experience and certificate of apprenticeship as a laboratory technician.}
     \resumeItemListEnd
 \resumeEntryEnd
 
-
-\section{\faGraduationCap}{Utdanning}
-
+\section{\faGraduationCap}{Education}
+\vspace{-10pt}
   \resumeEntryStart
     \resumeEntryTSDL
-      {Elektronisk Systemdesign og Innovasjon \normalfont(MTELSYS)}{2020 -- Nå}
-      {Norges teknisk-naturvitenskapelige universitet}{Trondheim}
+      {Electronic Systems Design \normalfont(MTELSYS)}{2020 -- now}
+      {Norwegian University of Science and Technology}{Trondheim/Glasgow}
     
     \resumeEntryTSDL
-    {Sjøforsvarets Radiooperatør Kurs {\normalfont(CIS-1), samt} Røykdykkerkurs}{2019}
+    {The navy's radio operator course {\normalfont(CIS-1), as well as} fire fighting course}{2019}
     {Tordenskjold}{Bergen}
-    
+     
     \resumeEntryTSDL
-    {Fagbrev, Laboratoriefaget}{2019}
+    {Certificate of apprenticeship, Laboratory technician}{2019}
     {Elkem Technology}{Kristiansand}
     
     \resumeEntryTSDL
-    {Tekniske og Allmenne Fag \normalfont(TAF)}{2015 -- 2019}
+    {High school: Technical and general subjects \normalfont(TAF)}{2015 -- 2019}
     {Kvadraturen skolesenter}{Kristiansand}
-    
   \resumeEntryEnd
 
-\section{\faSuitcase}{Erfaring}
+\section{\faSuitcase}{Experience}
+\vspace{-10pt}
 
   \resumeEntryStart
     \resumeEntryTSDL
-      {Ascend NTNU}{Sep. 2022 -- Nå}
-      {Hardware Medlem}{Trondheim}
+    {Nortek}{Jun. 2024 -- Aug. 2024}
+    {Summer internship}{Trondheim}
+  \resumeItemListStart
+    \resumeItem{Development of a sensor aquisition platform for an ROV.}
+  \resumeItemListEnd
+  \resumeEntryEnd
+
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {Kongsberg Defence \& Aerospace: LocalHawk}{Jun. 2023 -- Aug. 2023}
+      {Summer internship}{Kongsberg}
     \resumeItemListStart
-      \resumeItem {Sentral rolle i utvikling, prototyping og testing av drone til bruk i konkurranse}
-      \resumeItem {Hovedansvar for PCB design}
+      \resumeItem {CAD and production of an energy efficient autonomous UAV using FDM and SLS printing technologies.}
     \resumeItemListEnd
   \resumeEntryEnd
 
   \resumeEntryStart
     \resumeEntryTSDL
-      {Norges teknisk-naturvitenskapelige universitet}{Jun. 2021 -- Aug. 2022}
-      {Læringsassistent}{Trondheim}
+      {Ascend NTNU}{Sep. 2022 -- Aug. 2023}
+      {Hardware member}{Trondheim}
     \resumeItemListStart
-      \resumeItem {Deltidsansatt på IE fakultetet som læringsassistent i faget \textit{Innføring i analog og digital elektronikk}}
-      \resumeItem {Videreutvikling av faget sommeren 2021 og 2022}
+      \resumeItem {Strategic role in design, development and testing of PCBs for use in UAVs in competition.}
+      \resumeItem {Electronics and PCB design as main focus.}
     \resumeItemListEnd
   \resumeEntryEnd
 
   \resumeEntryStart
     \resumeEntryTSDL
-      {Sjøforsvaret}{Sep. 2019 -- Aug. 2020}
-      {Radiooperatør}{KNM Skjold}
+      {Norwegian University of Science and Technology}{Jun. 2021 -- Aug. 2022}
+      {Teaching assistant}{Trondheim}
     \resumeItemListStart
-        \resumeItem {Operasjon, vedlikehold og administrasjon av fartøyets sambandsstasjoner}
-        \resumeItem {Forfremmet til Ledende Menig (ULM)}
+      \resumeItem {Part time employee at the IE faculty as a teaching assistant in the subject \textit{Introduction to Analog and Digital Electronics}.}
+      \resumeItem {Employed the summers of 2021 and 2022 for further development of the subject.}
+    \resumeItemListEnd
+  \resumeEntryEnd
+
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {The Norwegian Navy}{Sep. 2019 -- Aug. 2020}
+      {Radio Operator}{KNM Skjold}
+    \resumeItemListStart
+        \resumeItem {Operation, maintenance and administration of the vessel's communication stations.}
+        \resumeItem {Promoted to leading private (ULM).}
     \resumeItemListEnd
   \resumeEntryEnd
 \newpage
   \resumeEntryStart
     \resumeEntryTSDL
       {Elkem Technology}{Aug. 2015 -- Sep. 2019}
-      {Lærling, laboratorieassistent}{Kristiansand}
+      {Apprentice, laboratory technician}{Kristiansand}
     \resumeItemListStart
-      \resumeItem {Prøvepreparering, homogenisering og kjemisk analyse ved bruk av en rekke kvantitative og kvalitative analysemetoder}
-      \resumeItem {Søtte under utarbeidelse av prøvestandarder innenfor ferrosilisium}
-      \resumeItem {Bidratt til forskning på karbonbidrag i silisium fra plastposer}
-      \resumeItem{Samarbeid med SINTEF i prosjektet \href{https://ree4eu.eu/}{REE4EU} -- gjenvinning av sjeldne jordarter}
+      \resumeItem {Sample preparation, homogenisation and chemical analysis using a range of quantitative and qualitative analysis methods.}
     \resumeItemListEnd
   \resumeEntryEnd
 
 
 %--------------------------------------------------Projects PROJECTS --------------------------------------------------
-\section{\faRocket}{Fritid og verv}
-
+\section{\faPuzzlePiece}{Free time and volunteer work}
+\vspace{-15pt}
   \resumeEntryStart
     \resumeEntryTD
-      {Hardwaremedlem, Ascend}{2022 -- Nå}
+      {Hardware member, Ascend}{2022 -- 2023}
     \resumeItemListStart
-      \resumeItem {Ascend er et studentdrevet teknisk verv som spesialiserer seg på å lage droner til konkurranse}
+      \resumeItem {Ascend NTNU is an aerial robotics team consisting of students from the Norwegian University of Science and Technology.}
+    \resumeItemListEnd
+  \resumeEntryEnd
+  \vspace{-1cm}
+  \resumeEntryStart
+    \resumeEntryTD
+      {Volunteer in the brewing committee}{2020 -- 2022}
+      \resumeItemListStart
+        \resumeItem{Deputy leader.}
+      \resumeItemListEnd
+  \resumeEntryEnd
+  \vspace{-1cm}
+  \resumeEntryStart
+    \resumeEntryTD
+      {Some side projects include}{}
+    \resumeItemListStart
+      \resumeItem{Herb container with an automatic watering system.}
+      \resumeItem{ATTINY85-based stop watch for use at the gym.}
+      \resumeItem{Face recognition on the front door of the apartment.}
+      \resumeItem{Photography as a hobby.}
     \resumeItemListEnd
   \resumeEntryEnd
 
+  \section{\faUsers}{References}
+  \vspace{-15pt}
   \resumeEntryStart
-    \resumeEntryTD
-      {Nestleder i linjeforeningens HaandbrygerCommitee}{2020 -- 2022}
+      \resumeEntryTSDL
+        {Bjerknes, Jan Dyre -- \normalfont LocalHawk project supervisor}{907 02 187}
+        {Senior Systems Engineer, Kongsberg Defence \& Aerospace}{}
+  \resumeEntryEnd
+  \resumeEntryStart
+      \resumeEntryTSDL
+        {Løvlie, John} {916 30 947}
+        {Department manager - eWorks, Kongsberg Defence \& Aerospace}{}
   \resumeEntryEnd
 
   \resumeEntryStart
-    \resumeEntryTD
-      {Diverse hobbyprosjekter}{}
-    \resumeItemListStart
-      \resumeItem{Urtehage med automatisk vanning}
-      \resumeItem{Stoppeklokke til bruk på trening}
-      \resumeItem{Ansiktsgjenkjenning på ytterdøren i kollektivet}
-    \resumeItemListEnd
+      \resumeEntryTSDL
+        {Teisrud, Hege -- \normalfont Boss}{418 09 497}
+        {Laboratory engineer, Elkem Technology}{}
   \resumeEntryEnd
-
-
-\section{\faUsers}{Referanser}
-\begin{tabularx}{\textwidth}{XX} {
- \resumeEntryStart
-    \resumeEntryTSDL
-      {Teisrud, Hege -- \normalfont Sjef}{}
-      {Laboratorieingeniør, Elkem Technology}{}
-      \newline 418 09 497
+  \resumeEntryStart
+      \resumeEntryTSDL
+        {Tefre, Joachim Lindholm -- \normalfont Training officer}{469 61 949}
+        {Technician, KNM Skjold}{}
   \resumeEntryEnd
-} & {
- \resumeEntryStart
-    \resumeEntryTSDL
-      {Tefre, Joachim Lindholm -- \normalfont Opplæringsansvarlig}{}
-      {Teletekniker, KNM Skjold}{}
-      \newline 469 61 949
-  \resumeEntryEnd}
-  \end{tabularx}
-
 
 \end{document}
